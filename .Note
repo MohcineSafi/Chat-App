@@ -1,0 +1,2 @@
+Run frontend: npm run start-frontend
+Run backend: npm start
