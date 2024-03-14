@@ -14,7 +14,7 @@ const userSchema = new mongoose.Schema(
     password: {
       type: String,
       required: true,
-      minlenghth: 6,
+      minlength: 6,
     },
     gender: {
       type: String,
@@ -25,8 +25,9 @@ const userSchema = new mongoose.Schema(
       type: String,
       default: "",
     },
+    // createdAt, updatedAt => Member since <createdAt>
   },
-  { timestamps: true } // createdAt, updatedAt => Members since <createdAt>
+  { timestamps: true }
 );
 
 const User = mongoose.model("User", userSchema);
